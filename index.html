@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Phil's Cut Tracker</title>
+  <meta name="theme-color" content="#2347e0">
+  <meta name="color-scheme" content="dark">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Cut Tracker">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="icons/icon-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="band">
+    <div class="wrap">
+      <h1>Phil's Cut Tracker</h1>
+      <p class="sub">Cut · 2,000 kcal · 160–190 g protein</p>
+      <p class="summary" id="summary">Loading…</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="tiles" id="tiles"></section>
+
+    <section class="card">
+      <h2>Weight</h2>
+      <div class="chart" id="chart"></div>
+      <p class="legend"><span class="sw band-sw"></span>Goal 155–157 lb <span class="sw dot-sw"></span>Latest</p>
+    </section>
+
+    <section class="card">
+      <h2>Weekly averages</h2>
+      <table class="tbl" id="weeks"></table>
+    </section>
+
+    <section>
+      <h2 class="section-h">Every day, meal by meal</h2>
+      <div id="days"></div>
+    </section>
+
+    <section class="card">
+      <h2>Lifts</h2>
+      <div class="scroll-x"><table class="tbl" id="lifts"></table></div>
+    </section>
+
+    <p class="foot" id="foot"></p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
